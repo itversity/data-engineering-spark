@@ -1,6 +1,6 @@
 services:
   itvdelab:
-    image: itvdelab
+    image: dgadiraju/itvdelab
     hostname: itvdelab
     ports:
       - "8888:8888"
@@ -17,7 +17,7 @@ services:
   cluster_util_db:
     image: postgres:13
     ports:
-      - "5432:5432"
+      - "6432:5432"
     volumes:
       - ./cluster_util_db_scripts:/docker-entrypoint-initdb.d
       - ./cluster_util_db_volume:/var/lib/postgresql/data

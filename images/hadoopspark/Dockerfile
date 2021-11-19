@@ -46,5 +46,7 @@ RUN jupyter kernelspec \
     --user
 
 RUN chmod u+x deploy.sh
-# CMD ["/home/itversity/.local/bin/jupyter", "lab", "--ip", "0.0.0.0"]
+
 CMD ["./deploy.sh"]
+
+# CMD ["/home/itversity/.local/bin/jupyter", "lab", "--ip", "0.0.0.0"]
