@@ -1,0 +1,11 @@
+services:
+  apachedemo:
+    image: ubuntu/apache2
+    ports:
+      - "8080:80"
+  postgresdemo:
+    image: postgres:13
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: itversity

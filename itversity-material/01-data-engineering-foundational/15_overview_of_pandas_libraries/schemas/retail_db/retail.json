@@ -1,0 +1,44 @@
+{
+    "categories": [
+        {"column_name": "category_id", "data_type": "int"},
+        {"column_name": "category_department_id", "data_type": "int"},
+        {"column_name": "category_name", "data_type": "str"}
+    ],
+    "customers": [
+        {"column_name": "customer_id", "data_type": "int"},
+        {"column_name": "customer_fname", "data_type": "str"},
+        {"column_name": "customer_lname", "data_type": "str"},
+        {"column_name": "customer_email", "data_type": "str"},
+        {"column_name": "customer_password", "data_type": "str"},
+        {"column_name": "customer_street", "data_type": "str"},
+        {"column_name": "customer_city", "data_type": "str"},
+        {"column_name": "customer_state", "data_type": "str"},
+        {"column_name": "customer_zipcode", "data_type": "str"}
+    ],
+    "departments": [
+        {"column_name": "department_id", "data_type": "int"},
+        {"column_name": "department_name", "data_type": "str"}
+    ],
+    "order_items": [
+        {"column_name": "order_item_id", "data_type": "int"},
+        {"column_name": "order_item_order_id", "data_type": "int"},
+        {"column_name": "order_item_product_id", "data_type": "int"},
+        {"column_name": "order_item_quantity", "data_type": "int"},
+        {"column_name": "order_item_subtotal", "data_type": "float"},
+        {"column_name": "order_item_product_price", "data_type": "float"}
+    ],
+    "orders": [
+        {"column_name": "order_id", "data_type": "int"},
+        {"column_name": "order_date", "data_type": "str"},
+        {"column_name": "order_customer_id", "data_type": "int"},
+        {"column_name": "order_status", "data_type": "int"}
+    ],
+    "products": [
+        {"column_name": "product_id", "data_type": "int"},
+        {"column_name": "product_category_id", "data_type": "int"},
+        {"column_name": "product_name", "data_type": "str"},
+        {"column_name": "product_description", "data_type": "str"},
+        {"column_name": "product_price", "data_type": "float"},
+        {"column_name": "product_image", "data_type": "str"}
+    ]    
+}

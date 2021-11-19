@@ -1,0 +1,40 @@
+services:
+  lmslbserver:
+    build:
+      context: lmslbserver
+    ports:
+      - "8080:80"
+    networks:
+      - lmsnw
+    depends_on:
+      - "lmsappserver"
+  lmsappserver:
+    build:
+      context: .
+      dockerfile: Dockerfile.lmsapp.dev
+    volumes:
+      - "./lms-app:/lms/lms-app"
+    networks:
+      - lmsnw
+    environment:
+      DB_HOST: $DB_HOST
+      DB_PORT: $DB_PORT
+      DB_NAME: $DB_NAME
+      DB_USER: $DB_USER
+      DB_PASS: $DB_PASS
+    depends_on:
+      - "lmsdbserver"
+  lmsdbserver:
+    image: postgres:13
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db_scripts:/docker-entrypoint-initdb.d
+      - ./lmsdbserver_volume:/var/lib/postgresql/data
+    networks:
+      - lmsnw
+    environment:
+      POSTGRES_PASSWORD: itversity
+networks:
+  lmsnw:
+    name: lmsappnw

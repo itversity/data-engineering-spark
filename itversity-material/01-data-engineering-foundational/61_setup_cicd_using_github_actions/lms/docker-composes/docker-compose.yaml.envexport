@@ -1,0 +1,26 @@
+services:
+  lmsappserver:
+    build:
+      context: .
+      dockerfile: Dockerfile.lmsapp.dev
+    ports:
+      - "5000:5000"
+    volumes:
+      - "./lms-app:/lms/lms-app"
+    environment:
+      DB_HOST: $DB_HOST
+      DB_PORT: $DB_PORT
+      DB_NAME: $DB_NAME
+      DB_USER: $DB_USER
+      DB_PASS: $DB_PASS
+    depends_on:
+      - "lmsdbserver"
+  lmsdbserver:
+    image: postgres:13
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db_scripts:/docker-entrypoint-initdb.d
+      - ./lmsdbserver_volume:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: itversity
