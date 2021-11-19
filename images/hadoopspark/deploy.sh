@@ -4,7 +4,7 @@ sudo service ssh start
 
 if [ ! -e /opt/.initialized ]
 then
-  touch /opt/.initialized
+  sudo touch /opt/.initialized
   tar xzf /home/itversity/softwares/hadoop-3.3.0.tar.gz -C /home/itversity/softwares
   rm -f /home/itversity/softwares/hadoop-3.3.0.tar.gz
   sudo mv -f /home/itversity/softwares/hadoop-3.3.0 /opt

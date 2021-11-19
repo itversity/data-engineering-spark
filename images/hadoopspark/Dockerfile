@@ -15,7 +15,7 @@ RUN sed -i "s/%sudo\tALL=(ALL:ALL) ALL/%sudo\tALL=(ALL:ALL) NOPASSWD:ALL/g" /etc
 USER itversity
 
 WORKDIR /home/itversity
-COPY --chown=itversity:itversity ../../.ssh .ssh
+COPY --chown=itversity:itversity .ssh .ssh
 RUN chmod 700 -R .ssh
 
 COPY --chown=itversity:itversity requirements.txt requirements.txt
@@ -24,7 +24,7 @@ RUN python3 -m pip install -r requirements.txt
 
 COPY --chown=itversity:itversity softwares softwares
 COPY --chown=itversity:itversity deploy.sh deploy.sh
-COPY --chown=itversity:itversity ../../configs/.profile .profile
+COPY --chown=itversity:itversity configs/.profile .profile
 COPY --chown=itversity:itversity kernels .kernels
 
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64

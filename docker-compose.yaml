@@ -5,7 +5,6 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - "./opt:/opt"
       - "./configs:/home/itversity/configs"
       - "./data:/data"
     environment:
@@ -20,7 +19,6 @@ services:
       - "6432:5432"
     volumes:
       - ./cluster_util_db_scripts:/docker-entrypoint-initdb.d
-      - ./cluster_util_db_volume:/var/lib/postgresql/data
     networks:
       - itvdelabnw
     environment:
