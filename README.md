@@ -18,7 +18,7 @@ If you are using Windows or Mac, you need to change the settings to use as much 
 * Change memory to 4 GB.
 * Change CPUs to the maximum number.
 
-### Setup Environment
+### Clone Repository
 
 Here are the steps one need to follow to setup the lab.
 * Clone the repository by running `git clone https://github.com/itversity/data-engineering-spark`.
