@@ -1,9 +1,0 @@
-Flask==2.0.2
-psycopg2-binary==2.9.1
-flask-sqlalchemy==2.5.1
-gunicorn==20.1.0
-
-# Security
-# High Availability
-# Scalability
-# Load Balancing

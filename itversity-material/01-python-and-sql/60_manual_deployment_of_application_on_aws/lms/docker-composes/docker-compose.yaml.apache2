@@ -1,5 +1,0 @@
-services:
-  apachedemo:
-    image: ubuntu/apache2
-    ports:
-      - "8080:80"
