@@ -41,21 +41,24 @@ then
   sudo mkdir -p /opt/spark3/jars/ 
   sudo mv -f /home/itversity/softwares/postgresql-42.2.19.jar /opt/spark3/jars/postgresql-42.2.19.jar
   sudo chown ${USER}:${USER} -R /opt/spark-3.1.2-bin-hadoop3.2
+
+  /opt/hadoop/sbin/start-dfs.sh
+  /opt/hadoop/sbin/start-yarn.sh
+
+  hdfs dfs -mkdir -p /user/itversity
+
+  hdfs dfs -mkdir -p /spark2-jars
+  hdfs dfs -mkdir -p /spark2-logs
+
+  hdfs dfs -put -f /opt/spark2/jars/* /spark2-jars
+
+  hdfs dfs -mkdir -p /spark3-jars
+  hdfs dfs -mkdir -p /spark3-logs
+
+  hdfs dfs -put -f /opt/spark3/jars/* /spark3-jars
+else
+  /opt/hadoop/sbin/start-dfs.sh
+  /opt/hadoop/sbin/start-yarn.sh
 fi
-
-/opt/hadoop/sbin/start-dfs.sh
-/opt/hadoop/sbin/start-yarn.sh
-
-hdfs dfs -mkdir -p /user/itversity
-
-hdfs dfs -mkdir -p /spark2-jars
-hdfs dfs -mkdir -p /spark2-logs
-
-hdfs dfs -put -f /opt/spark2/jars/* /spark2-jars
-
-hdfs dfs -mkdir -p /spark3-jars
-hdfs dfs -mkdir -p /spark3-logs
-
-hdfs dfs -put -f /opt/spark3/jars/* /spark3-jars
 
 /home/itversity/.local/bin/jupyter lab --ip 0.0.0.0
