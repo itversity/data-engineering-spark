@@ -26,7 +26,7 @@ Here are the steps one need to follow to setup the lab.
 ### Start Environment
 
 Here are the steps to start the environment.
-* Run `docker-compose up itvdflab -d --build`.
+* Run `docker-compose up -d --build itvdflab`.
 * It will set up environment with Jupyter Lab and Postgresql. You can validate by running `docker-compose ps`.
 * You can run `docker-compose logs -f` to review the progress.
 * You can stop the environment using `docker-compose stop` command.
@@ -90,7 +90,7 @@ Hadoop and Spark image is quite big. It is close to 1.5 GB.
 ### Start Environment
 
 Here are the steps to start the environment.
-* Run `docker-compose up itvdelab -d --build`.
+* Run `docker-compose up -d --build itvdelab`.
 * It will set up single node Hadoop, Hive and Spark Environment along with metastore for hive.
 * You can run `docker-compose logs -f itvdelab` to review the progress. It will take some time to complete the setup process.
 * You can stop the environment using `docker-compose stop` command.
