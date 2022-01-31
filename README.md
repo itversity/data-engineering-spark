@@ -57,7 +57,8 @@ Here are the pre-requisites to setup the lab.
 * CPU: At least Quadcore
 * If you are using Windows or Mac, make sure to setup Docker Desktop.
 * If your system does not meet the requirement, you need to setup environment using AWS Cloud9.
-* Even if you have 16 GB RAM and the Quadcore CPU, the system might slow down over the usage. You can always using AWS Cloud9 as fallback option.
+* Even if you have 16 GB RAM and the Quadcore CPU, the system might slow down once we start the docker containers due to the requirements of the resources. You can always use AWS Cloud9 as fallback option.
+* In my case, I will be demonstrating using Cloud9.
 
 ### Configure Docker Desktop
 
