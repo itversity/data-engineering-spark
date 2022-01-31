@@ -78,7 +78,8 @@ Hadoop and Spark require more horse power. Also, there is no need to keep contai
 * We can tear down containers related to Python and SQL by running below command.
 
 ```shell
-docker compose rm itvdflab -v --rmi all
+docker-compose rm -v itvdflab
+docker-compose rm -v pg.itversity.com
 ```
 
 ### Pull the Image
