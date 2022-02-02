@@ -1,2 +1,3 @@
 jupyterlab==3.2.4
 ipython-sql==0.4.0
+toree==0.4.0

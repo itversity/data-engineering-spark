@@ -56,6 +56,8 @@ then
   hdfs dfs -mkdir -p /spark3-logs
 
   hdfs dfs -put -f /opt/spark3/jars/* /spark3-jars
+  ln -s /usr/bin/python3 /usr/bin/python
+  jupyter toree install --spark_home=/opt/spark2/ --user
 else
   /opt/hadoop/sbin/start-dfs.sh
   /opt/hadoop/sbin/start-yarn.sh
