@@ -1,6 +1,6 @@
 services:
   itvdelab:
-    image: dgadiraju/itvdelab
+    image: itversity/itvdelab
     hostname: itvdelab
     ports:
       - "8888:8888"

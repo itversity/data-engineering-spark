@@ -105,7 +105,7 @@ docker-compose rm -v pg.itversity.com
 
 Hadoop and Spark image is quite big. It is close to 1.5 GB.
 * Make sure to pull it before running `docker-compose` command to setup the lab.
-* You can pull the image using `docker pull dgadiraju/itvdelab`.
+* You can pull the image using `docker pull itversity/itvdelab`.
 * You can validate if the image is successfully pulled or not by running `docker images` command.
 
 ### Start Environment
