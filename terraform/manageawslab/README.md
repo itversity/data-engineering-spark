@@ -6,6 +6,8 @@ As part of this module you will get all the required terraform based components 
 Here are the pre-requisites to use this module to setup Single Node Hadoop and Spark Lab.
 * Irrespective of the OS (Windows or Mac), you need to setup Terraform so that you can use this module to setup Hadoop and Spark Lab on AWS.
 * Also you need to ensure that this repository is cloned.
+* Make sure to have valid AWS Account.
+* Go to AWS Web Console and then go to EC2 Dashboard to create EC2 Key Pair. Use **itvaws** as name to the Key Pair. It is hardcoded in our terraform script. Also, make sure you do not have passphrase associated with the Kay Pair.
 
 ## Steps to Setup Single Node Hadoop and Spark Lab on AWS using Terraform
 Once terraform is installed you can go to this folder and perform following steps to Setup Single Node Hadoop and Spark Lab on AWS using Terraform.
