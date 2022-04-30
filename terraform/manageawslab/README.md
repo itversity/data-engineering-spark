@@ -33,7 +33,7 @@ At any point in time you can run `terraform destroy -auto-approve` to clean up m
 ## Manage Single Node Hadoop and Spark Lab on AWS using Terraform
 Let us understand how to stop and start the ec2 instance where Single Node Hadoop and Spark Lab on AWS is setup using Terraform.
 
-* Here are the commands to stop the ec2 instance. Make sure to stop when you want to take a break.
+* Here are the commands to stop the ec2 instance. Make sure to stop when you want to take a break. You need to start from the **terraform/manageawslab** folder.
 ```
 terraform output ec2_instance_id # Make sure to replace ec2_instance_id as part of stop_instance as well as start_instance
 cd stopawslab
