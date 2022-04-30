@@ -46,7 +46,7 @@ terraform apply \
 ```
 cd startawslab
 terraform apply \
-  -target null_resource.start_instance \
+  -target null_resource.start_spark_lab \
   -var ec2_instance_id="i-02e61d9f1fd6223ed" \
   -auto-approve
 terraform output ec2_public_dns
