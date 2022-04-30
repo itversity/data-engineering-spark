@@ -77,7 +77,7 @@ resource "aws_instance" "deessentials" {
   connection {
     type = "ssh"
     user = "ubuntu"
-    # private_key = "${file("~/.ssh/itvaws")}"
+    private_key = "${file("~/.ssh/itvaws")}"
     host = self.public_dns
     agent = true
   }

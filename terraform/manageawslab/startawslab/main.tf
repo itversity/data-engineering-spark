@@ -32,7 +32,7 @@ resource "null_resource" "start_spark_lab" {
   connection {
     type = "ssh"
     user = "ubuntu"
-    # private_key = "${file("~/.ssh/itvaws")}"
+    private_key = "${file("~/.ssh/itvaws")}"
     host = data.aws_instance.deessentials.public_dns
     agent = true
   }
@@ -47,6 +47,10 @@ resource "null_resource" "start_spark_lab" {
   triggers = {
     always_run = "${timestamp()}"
   }
+
+  depends_on = [
+    null_resource.start_instance,
+  ]
 }
 
 output "ec2_public_dns" {

@@ -30,6 +30,7 @@ resource "null_resource" "stop_spark_lab" {
   connection {
     type = "ssh"
     user = "ubuntu"
+    private_key = "${file("~/.ssh/itvaws")}"
     host = data.aws_instance.deessentials.public_dns
     agent = true
   }
