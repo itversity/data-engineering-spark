@@ -30,8 +30,10 @@ At any point in time you can run `terraform destroy -auto-approve` to clean up m
 
 ## Manage Single Node Hadoop and Spark Lab on AWS using Terraform
 
+```
 terraform output aws_instance.deessentials.public_dns
 terraform apply \
   -target null_resource.stop_instance \
   -var ec2_instance_id="i-0440a6b38cdb676d0" \
   -var ec2_public_dns=ec2-34-200-220-125.compute-1.amazonaws.com
+```
