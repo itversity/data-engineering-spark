@@ -3,9 +3,11 @@ This is ITVersity repository to provide appropriate single node hands on lab for
 
 ## Udemy Courses
 
-This GitHub repository can be leveraged to setup Single Node Hadoop and Spark Cluster along with Jupyterlab and Postgres to learn Python, SQL, Hadoop, Hive, and Spark which are covered as part of these Udemy courses. They are available at a max of $25 and we provide $10 coupons 2 times every month. Also, these courses are part of Udemy for business.
+This GitHub repository can be leveraged to setup Single Node Hadoop and Spark Cluster along with Jupyterlab and Postgres to learn Python, SQL, Hadoop, Hive, and Spark which are covered as part of the below Udemy courses. They are available at a max of $25 and we provide $10 coupons 3 times every month. Also, these courses are part of Udemy for business.
 * [Data Engineering Essentials Hands-on - Python, SQL, and Spark](https://www.udemy.com/course/data-engineering-essentials-sql-python-and-spark/?referralCode=EEF55B4668DA42F6154D)
 * [Spark SQL and Pyspark 2 or Pyspark 3](https://www.udemy.com/course/cca-175-spark-and-hadoop-developer-python-pyspark/?referralCode=86C8942891469FD0AD6D)
+
+##### Receive Udemy Course Coupons by filling [ITVersity Course Coupons - Github Data Engineering Spark Repository](https://forms.gle/p9jE3nT5r2XU1cVX6) form
 
 ## Technologies Covered
 
@@ -23,7 +25,7 @@ For all video lectures, up-to-date material, live support - feel free to sign up
 
 ### Pre-requisites
 
-Here are the pre-requisites to setup the lab.
+Here are the pre-requisites to setup the Python and SQL lab.
 * Memory: 8 GB RAM
 * CPU: At least Quadcore
 * If you are using Windows or Mac, make sure to setup Docker Desktop.
@@ -71,7 +73,7 @@ Once you login, you should be able to go through the first major module under **
 
 ### Pre-requisites
 
-Here are the pre-requisites to setup the lab.
+Here are the pre-requisites to setup the Hadoop and Spark lab.
 * Memory: 16 GB RAM
 * CPU: At least Quadcore
 * If you are using Windows or Mac, make sure to setup Docker Desktop.
