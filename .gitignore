@@ -5,3 +5,4 @@
 .ipynb_checkpoints
 .DS_Store
 /de-venv/
+.env
