@@ -1,5 +1,0 @@
-terraform.tfstate
-terraform.tfstate.backup
-.terraform
-.terraform.lock.hcl
-itversitytf-834fa9225831.json
